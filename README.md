@@ -1,8 +1,4 @@
-This is the code which accompanies the SIGIR 2020 paper Detecting Concept Drift in Medical Triage by Huggard et al.
-
-To replicate the paper's experimental data, you will need to
-1. Clone this repo
-2. activate virtual env
+This is the code which accompanies the SIGIR 2020 paper [Detecting Concept Drift in Medical Triage](https://hamishhuggard.com/pdfs/detecting_biomedical_concept_drift.pdf) by Huggard et al.
 
 Contents of repo
  * benchmark_data - the content of the benchmark datastreams
@@ -11,6 +7,10 @@ Contents of repo
  * referral_results - the content of the MIMIC-derived medical referral datastreams
  * CDDM_expeirments.ipynb - notebook in which the experiments are run and the data processed
 
-TODO:
- * find the code which generates the MIMIC data stream
- * give credit to [Tornado](https://github.com/alipsgh/tornado)
+To use this code you will need the Conda environment:
+```
+$ conda env create -f environment.yml
+$ conda activate sigir2020
+```
+
+Credits: some of this code is derived from the [Tornado](https://github.com/alipsgh/tornado) framework.
